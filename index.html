@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Pancasila</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Efek Cahaya Dekoratif -->
+    <div class="bg-decor"></div>
+
+    <div class="container">
+        <!-- Halaman Awal -->
+        <div class="start-screen" id="start-screen">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>🌸Pancasila Challenge: Uji Semangat Kebangsaanmu!🌸 </h1>
+                    <p>
+                        Ayo buktikan seberapa paham kamu tentang nilai luhur Pancasila🔥!</b><br> Setiap soal diberi waktu <b>10 detik</b> untuk dijawab.<br> Siap menguji semangatmu? Klik tombol di bawah untuk memulai
+                        <button id="start-btn" class="btn pulse">🚀 Mulai Kuis</button>
+                </div>
+                <div class="hero-illustration">
+                    <img src="https://akcdn.detik.net.id/community/media/visual/2023/08/09/logo-garuda-pancasila.png" alt="Ilustrasi Pancasila" class="hero-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Halaman Kuis -->
+        <div class="quiz-screen hidden" id="quiz-screen">
+            <div class="quiz-header">
+                <div class="timer">⏱️ <span id="time">10</span> detik</div>
+                <h2 id="question-text" class="fade-in"></h2>
+            </div>
+            <div id="answer-buttons" class="btn-container"></div>
+            <p id="feedback" class="feedback"></p>
+            <button id="next-btn" class="btn hidden">Soal Berikutnya ➜</button>
+        </div>
+
+        <!-- Halaman Hasil -->
+        <div class="result-screen hidden" id="result-screen">
+            <h2>🎉 Kuis Selesai! 🎉</h2>
+            <p>Skor Akhir Kamu:</p>
+            <h1 id="score"></h1>
+            <p>Terus pelajari makna dan nilai-nilai Pancasila dalam kehidupan sehari-hari 🇮🇩</p>
+            <button id="restart-btn" class="btn">Main Lagi 🔁</button>
+        </div>
+    </div>
+
+    <!-- Confetti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
